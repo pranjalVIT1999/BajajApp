@@ -1,0 +1,29 @@
+<mat-toolbar color= "primary">
+  <span>Welcome Admin</span>
+
+  <div class="spacer"></div>
+
+  <a mat-button routerLink="/home">Home</a>
+  <a mat-button routerLink="/services"> Services</a>
+  <a mat-button routerLink="/patient">Patient</a>
+  <a mat-button routerLink="/doctors">Doctors</a>
+  <a mat-button routerLink="/aboutus">About Us</a>
+  <a mat-raised-button color="accent">LogOut</a>
+
+</mat-toolbar>
+
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile>
+   <h1>Patient Count Live</h1>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <h1>Staff Count Live</h1>
+  </mat-grid-tile>
+  <mat-grid-tile>
+   <h1>Equipment Count Live</h1>
+  </mat-grid-tile>
+  <mat-grid-tile>
+   <h1>Emergency Cases Live</h1>
+  </mat-grid-tile>
+</mat-grid-list>
+<router-outlet></router-outlet>

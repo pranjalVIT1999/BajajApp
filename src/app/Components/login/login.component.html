@@ -1,0 +1,25 @@
+<div class="center">
+<mat-card>
+  <mat-card-content>
+    <form #f="ngForm" (ngSubmit)="onSubmit()">
+      <h2>Welcome To Pranjal Health Care</h2>
+      <mat-error *ngIf="!res">
+        The username and password were not recognized
+      </mat-error>
+      <mat-form-field>
+        <input matInput placeholder="Email" [(ngModel)]="user" name="username" [email]="true" required>
+        <mat-error>
+          Please provide a valid email address
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="password" placeholder="Password" [(ngModel)]="pass" name="password" required>
+        <mat-error>
+          Please provide a valid password
+        </mat-error>
+      </mat-form-field>
+      <button mat-raised-button color="primary" [disabled]="!f.form.valid">Login</button>
+    </form>
+   </mat-card-content>
+  </mat-card>
+</div>

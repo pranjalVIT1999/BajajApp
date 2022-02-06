@@ -1,0 +1,15 @@
+mat-card {
+  max-width: 400px;
+  margin: 2em auto;
+  text-align: center;
+  background-color: turquoise;
+}
+
+mat-form-field {
+  display: block;
+}
+
+.center{
+  background-image: url("healthcare_2.jpeg");
+  height:800px;
+}
